@@ -1,0 +1,13 @@
+
+.bedit {
+    border: 1px solid red;
+}
+
+.bedit .left {
+    float:left;
+}
+
+.bedit .right {
+    float:right;
+}
+

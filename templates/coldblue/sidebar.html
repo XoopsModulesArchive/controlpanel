@@ -1,0 +1,62 @@
+ <script language='javascript'>
+ <!--
+ 
+ function doURL(mydivID)
+ {
+ 
+ 	var openDiv = document.getElementById(mydivID);
+	
+	tdOpenId = mydivID + "TD";
+	
+	var my2TD = document.getElementById( tdOpenId );
+	my2TD.style.height = '100%';
+
+	openDiv.style.display = 'block';
+	openDiv.style.height = '100%';
+	
+	
+	var x = document.getElementsByTagName('div');
+	for (var i=0;i<x.length;i++)
+	{
+	        var closediv = x[i];
+	        if(closediv.className != mydivID){
+    			closediv.style.display = 'none';
+    			closediv.style.height = '0%';
+    			var idname = closediv.className;
+    			var tdid = idname + "TD";
+    			myTD = document.getElementById( tdid );
+    			myTD.style.height = '';
+    		}
+	}
+
+	
+}
+-->
+</script>
+<table width="230" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#C2C0C0">
+  <tr>
+    <td><img src="themes/coldblue/images/sidebar_top.png"></td>
+  </tr>
+  <!-- admin panel -->
+  <tr>
+    <td><a href="javascript:;" onclick="doURL('admin');"><img src="themes/coldblue/images/tree_tab.png"></a></td>
+  </tr>
+  <tr>
+    <td id="adminTD" style="height:100%">
+    <div id="admin" class="admin" style="display:block; height:100%; width: 100%">
+    <table height="100%" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-left: 1px solid #ffffff">
+    <tr>
+        <td style="padding-left: 2px;padding-right: 2px; padding-top: 6px" align="center">
+        <img src="themes/coldblue/images/showlevel1.png" onclick="frames['treemenu'].ctExpandTree('TreeMenu',1);">&nbsp;<img src="themes/coldblue/images/expand.png" onclick="frames['treemenu'].ctExpandTree('TreeMenu');">&nbsp;<img src="themes/coldblue/images/collapse.png" onclick="frames['treemenu'].ctCollapseTree('TreeMenu');">
+        <br>
+        <img src="themes/coldblue/images/sitemap_head.png"></td>
+    </tr>
+    <tr>
+        <td height="100%" style="padding-left: 2px;padding-right: 2px"><iframe id='treemenu' name='treemenu' src="http://localhost/dev/modules/controlpanel/includeFile.php?file=mainmenu.php" style="height:100%;width: 100%;overflow-x: hidden;borderleft: 1px solid;border-top: 1px solid;"></iframe></td></tr>
+    </table>
+    </div>
+    </td>
+  </tr>
+  <!-- end admin panel -->
+ 
+</table>

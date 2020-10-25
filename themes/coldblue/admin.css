@@ -1,0 +1,109 @@
+/* General definitions */
+html { 
+    scrollbar-face-color: #D3D3D3;
+    scrollbar-highlight-color: #F2F2F2;
+    scrollbar-3dlight-color: #C0C0C0;
+    scrollbar-darkshadow-color: #4B4B4B;
+    scrollbar-shadow-color: #808080;
+    scrollbar-arrow-color: #808080;
+    scrollbar-track-color: #C0C0C0;
+}
+
+
+body { 
+    border:0;
+    background-color : #C5C5C5; 
+    color: #000000; 
+    font-size: 12px; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    margin: 0px; 
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+
+td {font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+img {border: none;}
+
+hr { height: 3px; border: 3px #E18A00 solid; width: 95%;}
+
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #000000;}
+
+h1 { font-size: 20px;}
+h2 { font-size: 18px;}
+h3 { font-size: 16px;}
+h4 { font-size: 14px;}
+
+table{ 
+    padding: 0px;
+    background-color: #A1A1A1;
+    width:*;
+}
+
+th {
+    background-image: url(images/th_bg.png);
+    background-repeat: repeat-x; 
+    color: #000000; 
+    padding : 5px; 
+    font-size: 12px;
+    vertical-align : middle;
+    border-bottom: 1px solid #95A1AD;
+}
+//a:link {text-decoration: none; color: #ffffff; font-weight: bold; background-color: transparent;}
+//a:visited {text-decoration: none; color: #ffffff; font-weight: bold; background-color: transparent;}
+//a:hover {text-decoration: none; color: #ff9966; font-weight: bold; background-color: transparent;}
+
+td a:link {text-decoration: none; color: #666666; font-weight: bold; background-color: transparent;}
+td a:visited {text-decoration: none; color: #666666; font-weight: bold; background-color: transparent;}
+td a:hover {text-decoration: none; color: #ff9966; font-weight: bold; background-color: transparent;}
+
+
+/* Code and Quote Definition */
+div.xoopsCode { font-size: 11px; color: #006600; background-color: #FAFAFA; border: #c2cdd6 1px dashed;}
+div.xoopsQuote { font-size: 11px; color: #444444; line-height: 125%; text-align: justify; background-color: #FAFAFA; border: #c2cdd6 1px dashed;}
+
+/* Links for Quotes */
+div.xoopsQuote a:link, div.xoopsQuote a:visited { color: #444444; font-weight: bold; background-color: transparent;}
+div.xoopsQuote a:hover, div.xoopsQuote a:active { color: #1778cb; background-color: transparent;}
+
+/* Redirect messages */
+div.errorMsg { background-color: #FF3737; color: White; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color : #DDFFDF; color: #136C99; text-align:center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight : bold;}
+
+/* General small */
+.fontSmall { font-size : 10px; background-color: transparent;}
+a.fontSmall { color: #006699;}
+a.fontSmall:hover { color: #C23030; text-decoration: underline;}
+
+/*forms elements*/
+input { border-right: #000000 1px solid; border-top: #000000 1px solid; font: 11px verdana, arial, helvetica, sans-serif; border-left: #000000 1px solid;color: #000000; border-bottom: #000000 1px solid; background-color: #ffffff;}
+textarea { border: #000000 1px solid; width: 430px; font: 11px verdana, arial, helvetica, sans-serif;}
+input.formTextBox { border: #000000 1px solid; background: #ffffff; font: 11px verdana, arial, helvetica, sans-serif;}
+select { border: #000000 1px solid; font: 11px verdana, arial, helvetica, sans-serif;}
+
+div.content { text-align: left; padding: 0px 15px 0px 15px;}
+
+.xoopsCenter { text-align:center;}
+
+.bg1 { background-color: #E6E6E6;}
+.bg2 { background-color: #2F5376;}
+.bg3 { background-color: #2F5376;}
+.bg4 { background-color: #ECECEC;}
+.bg5 { background-color: #ECECEC;}
+
+.outer {
+    border-top: 1px solid #6F6F6F; 
+    border-left: 2px solid #6F6F6F;
+    border-right: 2px solid #E6E3E3;
+    border-bottom: 2px solid E6E3E3;
+
+}
+.head {background-color: #D5D5D5; padding: 5px; font-weight: bold; color:#000000; width: 320px}
+.even {background-color: #E5E5E5; padding: 15px; color:#000000}
+.odd {background-color: #E6E6E6; padding: 5px; color:#000000}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold; color:#000000}
+tr.head td {background-color: #c2cdd6; padding: 5px; font-weight: bold;    color: #ffffff;}
+tr.even td {background-color: #dee3e7; padding: 5px;}
+tr.odd td {background-color: #E6E6E6; padding: 5px;}
+tr.foot td {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
